@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 module BootstrapHelper
   module Breadcrumb
     def self.included(receiver)
@@ -15,7 +16,7 @@ module BootstrapHelper
       protected
 
       def set_breadcrumbs
-        @breadcrumbs = ["<a href='/'>Home</a>".html_safe]
+        @breadcrumbs = ["<a href='/'>首页</a>".html_safe]
       end
 
       def drop_breadcrumb(title=nil, url=nil)
